@@ -9,5 +9,15 @@ class Dog
     @breed = hash[:breed]
     @id = id
     end 
-  def self.create
+  def self.create_table 
+    sql_create_table = <<-SQL
+         CREATE TABLE IF NOT EXISTS dogs (
+            id INTEGER PRIMARY KEY,
+            name TEXT,
+            breed TEXT
+         );
+      SQL
+      
+      DB[:conn].execute(sql_create_table)
+    end 
 end 
