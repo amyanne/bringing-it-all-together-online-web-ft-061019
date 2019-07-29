@@ -9,4 +9,5 @@ class Dog
     @breed = hash[:breed]
     @id = id
     end 
+  def self.create
 end 
