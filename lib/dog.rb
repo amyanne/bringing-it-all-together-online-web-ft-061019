@@ -20,4 +20,6 @@ class Dog
       
       DB[:conn].execute(sql_create_table)
     end 
+    
+    def self.drop_table
 end 
