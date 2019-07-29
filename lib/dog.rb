@@ -21,6 +21,10 @@ class Dog
       DB[:conn].execute(sql_create_table)
     end 
     
+    def self.all
+        @@all
+      end 
+    
     def self.drop_table
       sql_drop = "DROP TABLE IF EXISTS dogs;"
       DB[:conn].execute(sql_drop)
@@ -62,5 +66,7 @@ class Dog
      new_dog = self.create(id: id, name: name, breed: breed)
    end 
    
-   def self.find_by_id
+   def self.find_by_id(id)
+     self.all.find{|dog| dog.id == id}
+   end 
 end 
