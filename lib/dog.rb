@@ -4,8 +4,8 @@ class Dog
   @@all = []
   
   def initialize(hash, id = nil)
-    @name = name
-    @breed = breed
-    @id = id
+    @name = hash[name]
+    @breed = hash[breed]
+    @id = hash[id]
   end 
 end 
