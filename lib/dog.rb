@@ -54,4 +54,6 @@ class Dog
      new_dog = Dog.new(hash)
      new_dog.save
    end 
+   
+   def self
 end 
