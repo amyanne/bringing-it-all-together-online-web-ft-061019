@@ -55,7 +55,7 @@ class Dog
    end
    
    def self.create(id: nil, name:, breed:)
-     hash = 
+     hash = {:id => id, :name => name, :breed => breed}
      new_dog = Dog.new(hash)
      new_dog.save
    end 
