@@ -1,3 +1,4 @@
+require 'pry'
 class Dog 
   attr_accessor :name, :breed, :id 
   
@@ -7,5 +8,6 @@ class Dog
     @name = hash[name]
     @breed = hash[breed]
     @id = hash[id]
+    binding.pry
   end 
 end 
