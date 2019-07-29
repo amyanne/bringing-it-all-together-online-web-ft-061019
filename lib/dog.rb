@@ -8,5 +8,6 @@ class Dog
     self.name = hash[name]
     self.name = hash[breed]
     @id = hash[id]
+    binding.pry
   end 
 end 
