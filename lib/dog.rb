@@ -71,6 +71,6 @@ class Dog
       SELECT * 
       FROM dogs 
       WHERE id = ?
-      SQL
+    SQL
    end 
 end 
